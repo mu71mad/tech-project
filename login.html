@@ -1,0 +1,40 @@
+<center>
+<div id="log-area">
+	<div style="margin-bottom: 15px;">Type Your Account</div>
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button id="btn-log">Login</button>
+<div id="error"></div>
+</div>
+</center>
+
+<style type="text/css">
+body{background-color: #151515;margin: 0;padding: 0;}	
+#log-area{margin-top: 300px;background-color: #e6e6e6;
+width: 450px;}	
+input{display: block;width: 60%;height: 40px;margin-bottom: 40px;border: none;
+	border-bottom: solid 2px black;color: black;text-align: center;
+}
+button{width: 60%;height: 30px;margin-bottom: 15px;border: none;
+cursor: pointer;background-color: #f1f1f1;box-shadow:  0 5px 11px black;}
+
+#error {color: red;width: 100%;text-align: center;background-color: #00000070;
+text-shadow: 0 5px 11px white;}
+</style>
+
+<script type="text/javascript">
+var name=document.getElementById('username');
+var password=document.getElementById('password');
+var submit=document.getElementById('btn-log');
+var userId=name+password;
+name='muhamad'
+password='123'
+
+submit.onclick=function() {
+if (userId==name+password) {
+alert('true')	
+} else {alert('false')}
+
+}
+
+</script>
